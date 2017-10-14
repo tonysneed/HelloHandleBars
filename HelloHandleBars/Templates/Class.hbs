@@ -1,0 +1,14 @@
+﻿{{#each imports}}
+{{> import}}
+
+{{/each}}
+
+namespace {{namespace}}
+{
+    public class {{class}}
+    {
+{{#each properties}}
+{{spaces 8}}{{> property}}
+{{/each}}
+    }
+}
