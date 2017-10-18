@@ -1,14 +1,11 @@
-﻿{{#each imports}}
-{{> import}}
-
-{{/each}}
+﻿{{> imports}}
 
 namespace {{namespace}}
 {
     public class {{class}}
     {
-{{#each properties}}
-{{spaces 8}}{{> property}}
-{{/each}}
+        {{> constructors}}
+
+        {{> properties}}
     }
 }
